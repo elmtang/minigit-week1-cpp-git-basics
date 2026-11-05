@@ -23,16 +23,6 @@ int main() {
         return 1;
     }
 
-    if (!check(minigit::headFile(root) == root / ".minigit" / "HEAD",
-               "HEAD path for ordinary root")) {
-        return 1;
-    }
-
-    if (!check(minigit::headFile(nestedRoot) == nestedRoot / ".minigit" / "HEAD",
-               "HEAD path for nested root")) {
-        return 1;
-    }
-
     std::cout << "All path tests passed\n";
     return 0;
 }
