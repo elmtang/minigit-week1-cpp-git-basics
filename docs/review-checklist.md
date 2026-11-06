@@ -9,3 +9,10 @@
 - Is each comment specific, respectful, and actionable?
 - Did the author respond to each review comment and push a fix where needed?
 - Instructor approval is required before merge.
+
+## Extra checks for S and G Issues
+
+- Were the Issue's starter tests pasted into the right test function, and was at least one new test added?
+- Are standard-library members used correctly (no `back()` on an empty string, no `operator[]` on a map just to check a key, `std::optional` checked before use)?
+- For `CommitGraph`/`FileTree`: are public signatures in the header unchanged? Are new helpers private? Are read-only functions `const`?
+- Use the *Class design checklist* in `docs/graph-and-tree-design.md`.

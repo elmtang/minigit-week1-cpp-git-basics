@@ -22,4 +22,14 @@ ctest --test-dir build -C Release --output-on-failure
 6. Review a classmate's PR and respond to feedback.
 7. Merge only after the required review and CI checks pass.
 
+## Modules
+
+| Module | Start here | Code | Tests |
+|---|---|---|---|
+| Week 1 paths and text files | [`docs/tutorial.md`](docs/tutorial.md) | `PathLab` | `tests/PathLabTests.cpp` |
+| Standard-library class drills (S1–S5) | [`docs/std-classes-guide.md`](docs/std-classes-guide.md) | `StdDrills` | `tests/StdDrillsTests.cpp` |
+| Commit graph and file tree (G1–G9) | [`docs/graph-and-tree-design.md`](docs/graph-and-tree-design.md) | `ObjectId`, `Commit`, `CommitGraph`, `FileTree` | `tests/CommitGraphTests.cpp`, `tests/FileTreeTests.cpp` |
+
+All modules build with the same three CMake commands above; CTest runs all four test programs.
+
 See [`docs/tutorial.md`](docs/tutorial.md) for the end-to-end walkthrough. Supporting material is in `docs/`, and starter Issue descriptions are in `issue-drafts/`.
